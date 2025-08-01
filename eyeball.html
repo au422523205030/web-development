@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: "Bebas Neue",cursive;
+            background:#f12711;
+            background: -webkit-linear-gradient(to right,#f5af19,#f12711);
+            background: linear-gradient(to right, #f5af19,#f12711);
+        }
+        .text{
+            position: absolute;
+            top:8rem;
+            text-align: center;
+            letter-spacing: 0.1rem;
+        }
+        .container{
+            display:flex;
+        }
+        .container .eyes{
+            position: relative;
+            width: 100px;
+            height: 100px;
+            display: block;
+            background-color: #fff;
+            margin: 0 20px;
+            border-radius: 50%;
+            box-shadow:0 5px 45px rgba(0, 0, 0, 0.2), 0 0 15px #f5af19, 0 0 25px #f5af19;
+        }
+        .container .eyes::before{
+            content: "";
+            top:50%;
+            left:35px;
+            transform: translate(-50%, -50%);
+            width:50px;
+            height:50px;
+            border-radius:50%;
+            background: #000;
+            position: absolute;
+            border:10px solid skyblue;
+            box-sizing: border-box;
+        }
+        </style>
+        <body>
+        <div class="container">
+            <div class="eyes"></div>
+            <div class="eyes"></div>
+        </div>
+        <script>
+  document.querySelector("body").addEventListener("mousemove", eyeball);
+
+  function eyeball(event) {
+    const eyes = document.querySelectorAll(".eyes");
+
+    eyes.forEach(function(eye) {
+      let box = eye.getBoundingClientRect();
+      let x = box.left + eye.clientWidth / 2;
+      let y = box.top + eye.clientHeight / 2;
+
+      let radian = Math.atan2(event.pageX - x, event.pageY - y);
+      let rotate = radian * (180 / Math.PI) * -1 + 270;
+
+      eye.style.transform = "rotate(" + rotate + "deg)";
+    });
+  }
+</script>
+
+        </body>
+        </html>
+    
