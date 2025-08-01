@@ -1,92 +1,132 @@
 <!DOCTYPE html>
 <html>
 <head>
-   <img src="logo.png" alt="logo" width="200" height="100" style="border-radius: 5px;">
-    <title>Restaurant</title>
-<style>
-    body{
-          background-color: antiquewhite;
-    }  
-    h1{
-        text-align: center;
-        text-decoration: underline;
-        
-    }
-    h2{
-        text-align: center;
-        text-decoration: underline;
-    }
-</style>
-<style>
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  color: azure;
-}
-
-li a:hover:not(.active) {
-  background-color:#66d487;
-}
-
-.active {
-  background-color:cornflowerblue;
-}
-</style>
-</head>
-<body>
-    <center>
-    <h1 style = "font-size: 50px;"><marquee> HOT & SPICY RESTAURANT</marquee></h1>
-    <ul style="background-color:black;">
-       <li><a class="active" href="home.html">Home</a></li>
-       <li><a href="services.html">Services</a></li>
-       <li><a href="#">Contact</a></li>
-       <li><a href="about.html">About</a></li>
-    </ul><br>
-    <img src="restaurant.jpg" width="1300" height="300" alt="restaurant">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Contact - Hot & Spicy Restaurant</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
     <style>
         body {
             background-color: antiquewhite;
             font-family: Arial, sans-serif;
+            margin: 0;
         }
-        h1 {
+        
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: black;
             text-align: center;
-            font-size: 60px;
-            text-decoration: underline;
         }
-        .contact-container {
+        li {
+            float: left;
+        }
+        li a {
+            display: block;
             text-align: center;
-            font-size: 25px;
-            margin-top: 30px;
+            padding: 14px 16px;
+            text-decoration: none;
+            color: white;
         }
-        .map {
-            margin-top: 30px;
+        li a:hover:not(.active) {
+            background-color: #66d487;
+        }
+        .active {
+            background-color: cornflowerblue;
+        }
+        .navbar{
+            background-color:black;
+        }
+        .navbar-brand, .nav-link {
+         color:white;
+        }
+        .contact-box {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 22px;
+            line-height: 2;
+        }
+        .form-container {
+            max-width: 600px;
+            margin: 30px auto;
+            background: #fff8f0;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #ccc;
+        }
+        input, textarea {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            font-size: 16px;
+        }
+        .about-container {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 1000px;
+            margin: 50px auto;
+            background-color: #fff8f0;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #ccc;
+        }
+        .submit-btn {
+            background-color: cornflowerblue;
+            color: white;
+            padding: 10px 30px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .submit-btn:hover {
+            background-color: #66d487;
+        }
+        .social-icons a {
+            margin: 0 10px;
+            font-size: 24px;
+            color: black;
+            text-decoration: none;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 14px;
         }
     </style>
 </head>
 <body>
-    <h1>Contact Us</h1>
-    <div class="contact-container">
-        <p><strong>Address:</strong> Hot & Spicy Restaurant, MG Road, Bangalore, Karnataka, India</p>
-        <p><strong>Phone:</strong> +91 98765 43210</p>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+      <img src="logo.png" alt="Logo" width="70px" height="60px">
+      <a class="navbar-brand" href="#">Hot & Spicy</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="home.html">Home</a>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="snacks.html">Snacks</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+    <div class="about-content">
+    <div class="contact-box">
+        <h2>Contact Us</h2>
+        <p><strong>Address:</strong> MG Road, Bangalore, India</p>
+        <p><strong>Phone:</strong> ‪+91 98765 43210‬</p>
         <p><strong>Email:</strong> contact@hotnspicy.com</p>
         <p><strong>Opening Hours:</strong> 10:00 AM – 11:00 PM (All Days)</p>
-        <p><strong>Follow Us:</strong> 
-            
-            <a href="https://www.facebook.com/" ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+        <p><strong>Follow us on:</strong>
+       <a href="https://www.facebook.com/" ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
   <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
 </svg></a> | 
             <a href="https://www.instagram.com/"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
@@ -95,7 +135,26 @@ li a:hover:not(.active) {
             <a href="https://twitter.com/"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
   <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
 </svg></a>
-
+      </p>
     </div>
+    </div>
+    <h2><center>Share your valuable feedback</center></h2>
+    <div class="form-container">
+        <form action="/action_page.php">
+            <input type="text" name="name" placeholder="Your Name" required><br>
+            <input type="email" name="email" placeholder="Your Email" required><br>
+            <input type="text" name="phone" placeholder="Phone Number"><br>
+            <textarea name="message" rows="5" placeholder="Your Message"></textarea><br>
+            <button type="submit" class="submit-btn">Send</button>
+        </form>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2025 Hot & Spicy Restaurant</p>
+    </div>
+
+    <!-- FontAwesome CDN for icons -->
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+
 </body>
 </html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Hot & Spicy Restaurant</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    <style>
+        body {
+            background-color: antiquewhite;
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+       .navbar{
+            background-color:black;
+            padding-top: 0px;
+        }
+        .navbar-brand, .nav-link {
+        color:white !important;
+        
+        }
+        li {
+            float: left;
+        }
+        li a {
+            display: block;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            color: white;
+        }
+        li a:hover:not(.active) {
+            background-color: #66d487;
+        }
+        .active {
+            background-color: cornflowerblue;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+        .section-title {
+            text-align: center;
+            font-size: 26px;
+            margin-bottom: 10px;
+        }
+        .section-subtitle {
+            text-align: center;
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 40px;
+        }
+        .grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        .card {
+            background-color: #fff8f0;
+            width: calc(33.333% - 20px);
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+        }
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .price {
+            margin-top: 10px;
+            font-size: 20px;
+            color: #444;
+        }
+        .item-name {
+            font-weight: bold;
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        .cart-btn {
+            display: inline-block;
+            background-color: cornflowerblue;
+            color: white;
+            padding: 8px 16px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .cart-btn:hover {
+            background-color: #66d487;
+        }
+        .see-more {
+            text-align: center;
+            margin: 40px 0;
+        }
+        .see-more a {
+            background-color: cornflowerblue;
+            color: white;
+            padding: 10px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .see-more a:hover {
+            background-color: #66d487;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+            background-color: #f4e5d3;
+        }
+        @media (max-width: 768px) {
+            .card {
+                width: calc(50% - 20px);
+            }
+        }
+        @media (max-width: 480px) {
+            .card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class="container-sm" style="max-width:900px;">
+    <img src="logo.png" width="70px" height="60px"; style="padding-top: 5px;">
+    <a class="navbar-brand" href="#">Hot & Spicy</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item "><a class="nav-link" href="home.html">Home</a></li>
+        <li class="nav-item active"><a class="nav-link" href="snacks.html">Snacks</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    </div>
+    </nav><br><br><br>
+    <div class="container">
+        <div class="section-title">Our Special Items</div>
+        <div class="section-subtitle">Taste our food which is worth for buying</div>
+
+        <div class="grid">
+            <div class="card">
+                <img src="C:\Users\user\OneDrive\Documents\HTML tutorial\demo\milkshake.jpg" alt="Milkshake">
+                <div class="price">$50</div>
+                <div class="item-name">Milkshake</div>
+                <a href="#" class="cart-btn">Add To Cart</a>
+            </div>
+            <div class="card">
+                <img src="C:\Users\user\OneDrive\Documents\HTML tutorial\demo\Mojito.jpg" alt="Mojito">
+                <div class="price">$40</div>
+                <div class="item-name">Mojito</div>
+                <a href="#" class="cart-btn">Add To Cart</a>
+            </div>
+            <div class="card">
+                <img src="C:\Users\user\OneDrive\Documents\HTML tutorial\demo\Falooda.jpg" alt="Falooda">
+                <div class="price">$80</div>
+                <div class="item-name">Falooda</div>
+                <a href="#" class="cart-btn">Add To Cart</a>
+            </div>
+            <div class="card">
+                <img src="C:\Users\user\OneDrive\Documents\HTML tutorial\demo\shawarma.jpg" alt="Shawarma">
+                <div class="price">$100</div>
+                <div class="item-name">Shawarma</div>
+                <a href="#" class="cart-btn">Add To Cart</a>
+            </div>
+            <div class="card">
+                <img src="C:\Users\user\OneDrive\Documents\HTML tutorial\demo\Sandwich.jpg" alt="Sandwich">
+                <div class="price">$40</div>
+                <div class="item-name">Sandwich</div>
+                <a href="#" class="cart-btn">Add To Cart</a>
+            </div>
+            <div class="card">
+                <img src="C:\Users\user\OneDrive\Documents\HTML tutorial\demo\nuggets.jpg" alt="Nuggets">
+                <div class="price">$60</div>
+                <div class="item-name">Nuggets</div>
+                <a href="#" class="cart-btn">Add To Cart</a>
+            </div>
+        </div>
+        <div class="see-more">
+            <a href="#">See More</a>
+    </div>
+    </body>
+    </html>
+    
